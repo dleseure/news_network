@@ -1,2 +1,2 @@
 # news_network
-#   This will be added by Walter.
+#   The goal of this project is to characterize, via network analysis, the sharing of news articles on internet websites.
