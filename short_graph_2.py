@@ -7,7 +7,7 @@ import pandas as pd
 #   Define work folder
 #   os.chdir("E:\\Work1\\Network_project\\test_data")
 
-got_net = Network(height="1000px", width="100%", bgcolor="#222222", font_color="white")
+got_net = Network(height="2000px", width="100%", bgcolor="#222222", font_color="white")
 
 # set the physics layout of the network
 got_net.barnes_hut()
