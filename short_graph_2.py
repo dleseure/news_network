@@ -7,15 +7,15 @@ import pandas as pd
 #   Define work folder
 #   os.chdir("E:\\Work1\\Network_project\\test_data")
 
-got_net = Network(height="2000px", width="100%", bgcolor="#222222", font_color="white")
+got_net = Network(height="2500px", width="100%", bgcolor="#222222", font_color="white")
 
 # set the physics layout of the network
 got_net.barnes_hut()
-got_data = pd.read_csv("g2_scores.csv")
+got_data = pd.read_csv("g_scores.csv")
 
-sources = str(got_data['source'])
-targets = str(got_data['target'])
-weights = str(got_data['weight'])
+sources = got_data['source']
+targets = got_data['target']
+weights = git commit short_graph_2.pygot_data['weight']
 
 edge_data = zip(sources, targets, weights)
 
@@ -35,4 +35,4 @@ for node in got_net.nodes:
     node["title"] += " Neighbors:<br>" + "<br>".join(neighbor_map[node["id"]])
     node["value"] = len(neighbor_map[node["id"]])
 
-got_net.show("g_scores.html")
+got_net.show("g_scores_3.html")
