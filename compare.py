@@ -1,11 +1,14 @@
-# This program compares the opening segments of two news articles and assigns a similarity score to the pair.
-#
+''' compare.py
+
+    Compares text of each pair of articles extracted from
+    article data returned from Newscatcher
+'''
 from pysimilar import compare
 from datetime import datetime
 import os
 
 #   Define work folder
-#   os.chdir("E:\\Work1\\Network_project\\test_data")
+os.chdir("E:\\Work1\\Network_project\\test_data")
 
 #   Create empty lists
 articles = []
@@ -41,8 +44,8 @@ while k <= 204:
         time_end = time_begin + 8
         time1 = one_art[time_begin:time_end]
         time1 = time1.replace(':','/',2)
-        source_begin = time_end + 1
-        source_end = len(articles[k]) - 1
+        source_begin = time_end + 3
+        source_end = len(articles[k]) - 2
         source1 = one_art[source_begin:source_end]
         
 #       Get second article & date/time
@@ -60,8 +63,8 @@ while k <= 204:
         time_end = time_begin + 8
         time2 = one_art[time_begin:time_end]
         time2 = time2.replace(':','/',2)
-        source_begin = time_end + 1
-        source_end = len(articles[j]) - 1
+        source_begin = time_end + 3
+        source_end = len(articles[j]) - 2
         source2 = one_art[source_begin:source_end]
 
         score = compare(art1, art2)
