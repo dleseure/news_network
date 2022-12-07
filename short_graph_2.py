@@ -15,7 +15,7 @@ got_data = pd.read_csv("g_scores.csv")
 
 sources = got_data['source']
 targets = got_data['target']
-weights = git commit short_graph_2.pygot_data['weight']
+weights = got_data['weight']
 
 edge_data = zip(sources, targets, weights)
 
