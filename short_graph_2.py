@@ -1,5 +1,12 @@
-#   from pyvis.network import Network
-import pyvis
+#   short_graph_2.py
+#   Takes data from a small number of articles obtained via Newscatcher
+#   and produces a directed graph based on comparison of every pair
+#   of articles.  Direction is determined by the published date:
+#   from the earlier article to the later article.  The size of the edge
+#   is determined by how similar the two articles are: 1 meaning
+#   they are identical, 0 meaning they are not simiar.
+#
+#   import pyvis
 from pyvis.network import Network
 import pandas as pd
 #   import os
@@ -7,10 +14,10 @@ import pandas as pd
 #   Define work folder
 #   os.chdir("E:\\Work1\\Network_project\\test_data")
 
-got_net = Network(height="2500px", width="100%", bgcolor="#222222", font_color="white")
+got_net = Network(height="2500px", width="100%", directed=True, bgcolor="#222222", font_color="white")
 
 # set the physics layout of the network
-got_net.barnes_hut()
+got_net.barnes_hut(central_gravity=0.8)
 got_data = pd.read_csv("g_scores.csv")
 
 sources = got_data['source']
@@ -26,7 +33,7 @@ for e in edge_data:
 
     got_net.add_node(src, src, title=src)
     got_net.add_node(dst, dst, title=dst)
-    got_net.add_edge(src, dst, value=w)
+    got_net.add_edge(src, dst, value=w, arrowStrikethrough=False)
 
 neighbor_map = got_net.get_adj_list()
 
