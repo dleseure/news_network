@@ -5,14 +5,15 @@
 '''
 from pysimilar import compare
 from datetime import datetime
-import os
+#   import os
 
 #   Define work folder
-os.chdir("E:\\Work1\\Network_project\\test_data")
+#   os.chdir("E:\\Work1\\Network_project\\test_data")
 
 #   Create empty lists
 articles = []
 scores = []
+top_scores = []
 
 #   Load articles
 with open('articles.csv', 'r',encoding='windows-1252') as articles_file:
@@ -95,6 +96,8 @@ while k <= 204:
 #       Save the result of one comparison        
         one_result = '"'+str(k)+'","'+source1 +'","'+str(j)+'","'+source2+'","'+str(score)+'","'+ direction +'"\n'
         scores.append(one_result)
+        if score >= 0.9:
+            top_scores.append(one_result)
         m = m + 1
         j = j + 1
     k = k + 1
@@ -105,7 +108,10 @@ while k <= 204:
 #   Save scores
 with open('scores.csv', 'w') as scores_file:
     scores_file.writelines(scores)
-    
+
+with open('top_scores.csv', 'w') as top_scores_file:
+    top_scores_file.writelines(top_scores)
+
 print("total number of scores:",m)
 print("scores >= 0.5 ",nbr50)
 print("scores >= 0.6 ",nbr60)
