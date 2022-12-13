@@ -1,4 +1,6 @@
-''' short_graph_2.py
+form pvis.network import Network
+short_graph_2.py
+
     Takes data from a small number of articles obtained via Newscatcher
     and produces a directed graph based on comparison of every pair
     of articles.  Direction is determined by the published date:
