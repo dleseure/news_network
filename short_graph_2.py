@@ -1,5 +1,4 @@
-import pyvis
-install pyvis
+
 """
 short_graph_2.py
 
