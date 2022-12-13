@@ -1,4 +1,6 @@
-form pvis.network import Network
+import pyvis
+install pyvis
+"""
 short_graph_2.py
 
     Takes data from a small number of articles obtained via Newscatcher
@@ -7,6 +9,7 @@ short_graph_2.py
     from the earlier article to the later article.  The size of the edge
     is determined by how similar the two articles are: 1 meaning
     they are identical, 0 meaning they are not simiar.              '''
+"""
 #
 from pyvis.network import Network
 import pandas as pd
