@@ -15,7 +15,7 @@ import pandas as pd
 #   import os       Used off-line
 
 #   Define work folder
-#   os.chdir("E:\\Work1\\Network_project\\test_data_all")
+#   os.chdir("E:\\Work1\\Network_project\\test_data")
 
 got_net = Network(height="2500px",width="100%",directed=True,bgcolor="#222222",font_color="white")
 
