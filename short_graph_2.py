@@ -15,7 +15,7 @@ import pandas as pd
 #   import os       Used off-line
 
 #   Define work folder
-#   os.chdir("E:\\Work1\\Network_project\\test_data")
+#   os.chdir("E:\\Work1\\Network_project\\test_data_all")
 
 got_net = Network(height="2500px",width="100%",directed=True,bgcolor="#222222",font_color="white")
 
@@ -45,4 +45,4 @@ for node in got_net.nodes:
     node["title"] += " Neighbors:<br>" + "<br>".join(neighbor_map[node["id"]])
     node["value"] = len(neighbor_map[node["id"]])
 
-got_net.show("g_scores_3.html")
+got_net.show("g_scores_4.html")
