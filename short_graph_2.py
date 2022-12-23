@@ -1,10 +1,14 @@
-''' short_graph_2.py
+
+"""
+short_graph_2.py
+
     Takes data from a small number of articles obtained via Newscatcher
     and produces a directed graph based on comparison of every pair
     of articles.  Direction is determined by the published date:
     from the earlier article to the later article.  The size of the edge
     is determined by how similar the two articles are: 1 meaning
     they are identical, 0 meaning they are not simiar.              '''
+"""
 #
 from pyvis.network import Network
 import pandas as pd
