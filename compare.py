@@ -4,6 +4,7 @@
     article data returned from Newscatcher
 '''
 from pysimilar import compare
+# import pysimilar
 from datetime import datetime
 #   import os
 
