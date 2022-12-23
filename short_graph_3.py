@@ -9,17 +9,17 @@
 '''
 from pyvis.network import Network
 import pandas as pd
-import os
+# import os
 
 #   Define work folder
-os.chdir("E:\\Work1\\Network_project\\test_data")
+# os.chdir("E:\\Work1\\Network_project\\test_data")
 
 got_net = Network(height="2500px", width="100%", directed=True,     \
                   bgcolor="#222222", font_color="white")
 
 # set the physics layout of the network
 got_net.barnes_hut(central_gravity=0.8)
-got_data = pd.read_csv("top_scores.csv")
+got_data = pd.read_csv("top_scores_2.csv")
 
 sources = got_data['source']
 targets = got_data['target']
@@ -42,4 +42,4 @@ for node in got_net.nodes:
     node["title"] += " Neighbors:<br>" + "<br>".join(neighbor_map[node["id"]])
     node["value"] = len(neighbor_map[node["id"]])
 
-got_net.show("top_scores.html")
+got_net.show("top_scores_2.html")
