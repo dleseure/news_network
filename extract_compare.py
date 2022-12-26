@@ -131,7 +131,7 @@ header =  'source' +  ',' + 'target' + ',' + 'weight' + '\n'
 top_scores.append(header)
 
 #   Load articles
-with open('articles.csv', 'r',encoding='windows-1252') as articles_file:
+with open('articles.csv', 'r',encoding='utf-8') as articles_file:
     articles = articles_file.readlines()
 
 #   Compare each article to every other article
