@@ -62,6 +62,7 @@ while k < 205:
     end_summary = one_article.find('rights', begin_summary)
     end_summary = end_summary - 3
     one_summary = one_article[begin_summary:end_summary]
+    one_summary = one_summary.strip()
     one_summary = one_summary.replace('"','')
     one_summary = one_summary.replace(',','')
     one_summary = one_summary.replace('\\n',' ')
