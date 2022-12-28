@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "41","msn.com","http://www.msn.com/en-us/news/politics/18-times-donald-trumps-political-committees-promised-worthless-rewards-for-a-donation/ss-AA11Ks7Z","58","msn.com","http://www.msn.com/en-us/news/politics/trumpflation-causes-maga-products-to-skyrocket-in-price/ar-AA14hfCS","1.0000000000000002","41"
 "41","msn.com","http://www.msn.com/en-us/news/politics/18-times-donald-trumps-political-committees-promised-worthless-rewards-for-a-donation/ss-AA11Ks7Z","82","msn.com","http://www.msn.com/en-us/news/politics/trump-portrayed-as-a-loser-by-2024-rivals-courting-his-big-donors-at-las-vegas-conference-report-says/ar-AA14ixSR","1.0000000000000002","82"
 "51","apnews.com","https://apnews.com/article/politics-donald-trump-merrick-garland-government-and-550c01de053c08db4d53ca57f315feb6","52","msn.com","http://www.msn.com/en-us/news/politics/garland-names-special-counsel-to-lead-trump-related-probes/ar-AA14gULj","0.9999999999999997","52"
@@ -11,3 +12,19 @@
 "109","msn.com","http://www.msn.com/en-us/news/politics/bill-maher-mocks-garland-s-special-counsel-appt-after-two-years-he-decided-to-give-it-to-somebody-else/ar-AA14igft","119","msn.com","http://www.msn.com/en-us/news/politics/trump-investigation-proves-garland-running-a-biden-protection-racket-jarrett/ar-AA14iohY","0.9087134998658604","119"
 "118","msn.com","http://www.msn.com/en-us/news/politics/paul-ryan-says-the-gop-will-lose-if-trump-is-the-2024-gop-presidential-nominee-we-stick-with-trump-we-keep-losing-elections/ar-AA14kLYo","121","msn.com","http://www.msn.com/en-us/news/politics/biden-s-aides-describe-trump-as-a-defeated-and-vulnerable-figure-who-could-help-the-president-secure-a-second-term-report-says/ar-AA14iyEG","1.0000000000000009","118"
 "160","pbs.org","https://www.pbs.org/newshour/politics/house-gop-pushes-forward-with-hunter-biden-probe-despite-thin-majority","162","msn.com","http://www.msn.com/en-us/news/politics/house-gop-pushes-hunter-biden-probe-despite-thin-majority/ar-AA14hRVb","0.9251019516466246","160"
+=======
+source,target,weight
+msn.com,msn.com,1.0000000000000002
+msn.com,msn.com,1.0000000000000002
+apnews.com,msn.com,0.9999999999999997
+apnews.com,washingtonpost.com,0.9223266439083397
+washingtonpost.com,msn.com,0.9223266439083397
+msn.com,msn.com,1.0000000000000009
+msn.com,msn.com,1.0000000000000009
+msn.com,msn.com,1.0000000000000002
+msn.com,msn.com,0.9640356733820058
+startribune.com,washingtonpost.com,0.9999999999999994
+msn.com,msn.com,0.9087134998658604
+msn.com,msn.com,1.0000000000000009
+msn.com,pbs.org,0.9251019516466246
+>>>>>>> f1c5ef6aa889291d74d1884a9853d54757d3ee68
